@@ -17,9 +17,9 @@ Below is a global progress bar that displays the project's completion percentage
 The lower section presents real-time operational metrics, including the total number of tasks, items in progress, blocked tasks, completed tasks, and sprint velocity, facilitating continuous monitoring of team performance.
 
 Note: 
-
 All data, names, projects, metrics, users, and statistics displayed in the interface are entirely fictitious and for illustrative purposes only.
 They do not represent actual information and are not related to any existing companies, organizations, or individuals.
+
 
 
 Español:
@@ -40,5 +40,4 @@ Debajo se muestra una barra de progreso global que permite conocer el porcentaje
 En la zona inferior se presentan métricas operativas en tiempo real, incluyendo cantidad total de tareas, elementos en progreso, tareas bloqueadas, tareas completadas y velocidad del sprint, facilitando el monitoreo continuo del desempeño del equipo.
 
 Nota:
-
 Todos los datos, nombres, proyectos, métricas, usuarios y estadísticas mostrados en la interfaz son completamente ficticios y tienen fines exclusivamente demostrativos. No representan información real ni guardan relación con empresas, organizaciones o personas existentes.
