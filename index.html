@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlowDesk — Gestión de Proyectos Corporativos</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="app-header">
+  <div class="app-logo">
+    <div class="logo-mark">F</div>
+    FlowDesk
+  </div>
+
+  <div class="header-center">
+    <div class="header-tab active">Tablero</div>
+    <div class="header-tab">Lista</div>
+    <div class="header-tab">Gantt</div>
+    <div class="header-tab">Calendario</div>
+    <div class="header-tab">Reportes</div>
+  </div>
+
+  <div class="header-right">
+    <div class="avatar-group">
+      <div class="avatar" style="background:#5b4fcf">MR</div>
+      <div class="avatar" style="background:#0284c7">LP</div>
+      <div class="avatar" style="background:#16a34a">JP</div>
+      <div class="avatar" style="background:#dc2626">SA</div>
+      <div class="avatar" style="background:#4a5568;font-size:9px">+5</div>
+    </div>
+    <button class="btn-new">+ Nueva tarea</button>
+  </div>
+</header>
+
+<!-- ══ SUBHEADER ══ -->
+<div class="sub-header">
+  <div class="project-info">
+    <div class="project-name">🏢 Plataforma Empresarial B2B — Q2 2026</div>
+    <div class="project-meta">Sprint 7 de 12 · Equipo: 9 personas</div>
+  </div>
+  <div class="sub-actions">
+    <div class="chip active">Kanban</div>
+    <div class="chip">Filtros</div>
+    <div class="chip">Agrupar por: Asignado</div>
+    <div class="chip">🔍 Buscar</div>
+  </div>
+</div>
+
+<!-- ══ PROGRESS ══ -->
+<div class="progress-bar-wrap">
+  <span class="progress-label">Progreso del proyecto</span>
+  <div class="progress-track">
+    <div class="progress-fill"></div>
+  </div>
+  <span class="progress-pct">62% completado</span>
+  <div class="panel-divider"></div>
+  <span class="deadline-chip">⚠ Entrega: 30 Jun 2026</span>
+</div>
+
+<!-- ══ BOARD ══ -->
+<div class="board-wrap">
+
+  <!-- BACKLOG -->
+  <div class="column">
+    <div class="col-header">
+      <div class="col-title">
+        <div class="col-dot" style="background:#9ca3af"></div>
+        Backlog
+        <span class="col-count">3</span>
+      </div>
+      <div class="col-add">+</div>
+    </div>
+
+    <div class="card" style="animation-delay:0.05s">
+      <div class="card-top">
+        <span class="card-id">#FD-041</span>
+        <span class="priority-badge priority-low">Baja</span>
+      </div>
+      <div class="card-title">Migrar base de datos de usuarios a PostgreSQL 16</div>
+      <div class="card-tags">
+        <span class="tag tag-blue">Backend</span>
+        <span class="tag tag-purple">Database</span>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            3
+          </div>
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+            1
+          </div>
+        </div>
+        <div class="avatar-sm" style="background:#0284c7">LP</div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay:0.1s">
+      <div class="card-top">
+        <span class="card-id">#FD-039</span>
+        <span class="priority-badge priority-med">Media</span>
+      </div>
+      <div class="card-title">Diseñar sistema de permisos granular por módulo</div>
+      <div class="card-tags">
+        <span class="tag tag-purple">Auth</span>
+        <span class="tag tag-green">Seguridad</span>
+      </div>
+      <div class="checklist">
+        <span class="check-label">2/5</span>
+        <div class="check-bar"><div class="check-fill" style="width:40%"></div></div>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            7
+          </div>
+        </div>
+        <div class="avatar-sm" style="background:#5b4fcf">MR</div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay:0.15s">
+      <div class="card-top">
+        <span class="card-id">#FD-036</span>
+        <span class="priority-badge priority-none">Sin prioridad</span>
+      </div>
+      <div class="card-title">Documentar endpoints de API REST v2 en Swagger</div>
+      <div class="card-tags">
+        <span class="tag tag-blue">API</span>
+        <span class="tag tag-orange">Docs</span>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            2
+          </div>
+        </div>
+        <div class="avatar-sm" style="background:#16a34a">JP</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EN PROGRESO -->
+  <div class="column">
+    <div class="col-header">
+      <div class="col-title">
+        <div class="col-dot" style="background:#5b4fcf"></div>
+        En progreso
+        <span class="col-count">3</span>
+      </div>
+      <div class="col-add">+</div>
+    </div>
+
+    <div class="card" style="animation-delay:0.1s">
+      <div class="card-top">
+        <span class="card-id">#FD-044</span>
+        <span class="priority-badge priority-high">Alta</span>
+      </div>
+      <div class="card-title">Implementar módulo de facturación electrónica con integración SAT</div>
+      <div class="card-tags">
+        <span class="tag tag-orange">Finanzas</span>
+        <span class="tag tag-blue">Backend</span>
+        <span class="tag tag-green">Legal</span>
+      </div>
+      <div class="checklist">
+        <span class="check-label">3/6</span>
+        <div class="check-bar"><div class="check-fill" style="width:50%"></div></div>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            12
+          </div>
+        </div>
+        <div style="display:flex">
+          <div class="avatar-sm" style="background:#5b4fcf;margin-left:0">MR</div>
+          <div class="avatar-sm" style="background:#0284c7;margin-left:-4px">LP</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay:0.15s">
+      <div class="card-top">
+        <span class="card-id">#FD-042</span>
+        <span class="priority-badge priority-high">Alta</span>
+      </div>
+      <div class="card-title">Dashboard de analytics en tiempo real — gráficas interactivas</div>
+      <div class="card-tags">
+        <span class="tag tag-purple">Frontend</span>
+        <span class="tag tag-blue">UI/UX</span>
+      </div>
+      <div class="checklist">
+        <span class="check-label">5/7</span>
+        <div class="check-bar"><div class="check-fill" style="width:71%"></div></div>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            5
+          </div>
+        </div>
+        <div class="avatar-sm" style="background:#dc2626">SA</div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay:0.2s">
+      <div class="card-top">
+        <span class="card-id">#FD-040</span>
+        <span class="priority-badge priority-med">Media</span>
+      </div>
+      <div class="card-title">Configurar pipeline CI/CD con GitHub Actions y deploy automático</div>
+      <div class="card-tags">
+        <span class="tag tag-green">DevOps</span>
+        <span class="tag tag-blue">Infra</span>
+      </div>
+      <div class="checklist">
+        <span class="check-label">2/4</span>
+        <div class="check-bar"><div class="check-fill" style="width:50%"></div></div>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            4
+          </div>
+        </div>
+        <div class="avatar-sm" style="background:#16a34a">JP</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EN REVISIÓN -->
+  <div class="column">
+    <div class="col-header">
+      <div class="col-title">
+        <div class="col-dot" style="background:#f59e0b"></div>
+        En revisión
+        <span class="col-count">2</span>
+      </div>
+      <div class="col-add">+</div>
+    </div>
+
+    <div class="card" style="animation-delay:0.15s">
+      <div class="card-top">
+        <span class="card-id">#FD-038</span>
+        <span class="priority-badge priority-high">Alta</span>
+      </div>
+      <div class="card-title">Autenticación SSO con proveedores SAML 2.0 y OAuth</div>
+      <div class="card-tags">
+        <span class="tag tag-purple">Auth</span>
+        <span class="tag tag-green">Seguridad</span>
+      </div>
+      <div class="checklist">
+        <span class="check-label">4/4</span>
+        <div class="check-bar"><div class="check-fill" style="width:100%;background:#5b4fcf"></div></div>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            8
+          </div>
+        </div>
+        <div style="display:flex">
+          <div class="avatar-sm" style="background:#5b4fcf;margin-left:0">MR</div>
+          <div class="avatar-sm" style="background:#dc2626;margin-left:-4px">SA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay:0.2s">
+      <div class="card-top">
+        <span class="card-id">#FD-035</span>
+        <span class="priority-badge priority-med">Media</span>
+      </div>
+      <div class="card-title">Diseño de sistema de notificaciones multicanal (email, push, webhook)</div>
+      <div class="card-tags">
+        <span class="tag tag-blue">Backend</span>
+        <span class="tag tag-orange">Notif</span>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            6
+          </div>
+        </div>
+        <div class="avatar-sm" style="background:#0284c7">LP</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QA -->
+  <div class="column">
+    <div class="col-header">
+      <div class="col-title">
+        <div class="col-dot" style="background:#8b5cf6"></div>
+        QA / Testing
+        <span class="col-count">2</span>
+      </div>
+      <div class="col-add">+</div>
+    </div>
+
+    <div class="card" style="animation-delay:0.2s">
+      <div class="card-top">
+        <span class="card-id">#FD-033</span>
+        <span class="priority-badge priority-high">Alta</span>
+      </div>
+      <div class="card-title">Tests de carga — simular 10,000 usuarios concurrentes</div>
+      <div class="card-tags">
+        <span class="tag tag-orange">Performance</span>
+        <span class="tag tag-purple">Testing</span>
+      </div>
+      <div class="checklist">
+        <span class="check-label">1/3</span>
+        <div class="check-bar"><div class="check-fill" style="width:33%"></div></div>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            4
+          </div>
+        </div>
+        <div class="avatar-sm" style="background:#16a34a">JP</div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay:0.25s">
+      <div class="card-top">
+        <span class="card-id">#FD-031</span>
+        <span class="priority-badge priority-med">Media</span>
+      </div>
+      <div class="card-title">Validación de flujos críticos de facturación en staging</div>
+      <div class="card-tags">
+        <span class="tag tag-green">QA</span>
+        <span class="tag tag-orange">Finanzas</span>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            3
+          </div>
+        </div>
+        <div class="avatar-sm" style="background:#dc2626">SA</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPLETADO -->
+  <div class="column">
+    <div class="col-header">
+      <div class="col-title">
+        <div class="col-dot" style="background:#16a34a"></div>
+        Completado
+        <span class="col-count">3</span>
+      </div>
+      <div class="col-add">+</div>
+    </div>
+
+    <div class="card" style="animation-delay:0.2s;opacity:0.7">
+      <div class="card-top">
+        <span class="card-id">#FD-028</span>
+        <span class="priority-badge priority-low">✓ Listo</span>
+      </div>
+      <div class="card-title" style="text-decoration:line-through;color:var(--muted)">Diseño del sistema de arquitectura microservicios</div>
+      <div class="card-tags"><span class="tag tag-blue">Arquitectura</span></div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta" style="color:var(--green)">✓ 12 Jun</div>
+        </div>
+        <div class="avatar-sm" style="background:#5b4fcf">MR</div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay:0.25s;opacity:0.7">
+      <div class="card-top">
+        <span class="card-id">#FD-025</span>
+        <span class="priority-badge priority-low">✓ Listo</span>
+      </div>
+      <div class="card-title" style="text-decoration:line-through;color:var(--muted)">Configuración inicial de entornos dev/staging/prod</div>
+      <div class="card-tags"><span class="tag tag-green">DevOps</span></div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta" style="color:var(--green)">✓ 04 Jun</div>
+        </div>
+        <div class="avatar-sm" style="background:#16a34a">JP</div>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay:0.3s;opacity:0.7">
+      <div class="card-top">
+        <span class="card-id">#FD-021</span>
+        <span class="priority-badge priority-low">✓ Listo</span>
+      </div>
+      <div class="card-title" style="text-decoration:line-through;color:var(--muted)">Definición del modelo de datos central y esquemas</div>
+      <div class="card-tags">
+        <span class="tag tag-purple">Database</span>
+        <span class="tag tag-blue">Backend</span>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-left">
+          <div class="card-meta" style="color:var(--green)">✓ 28 May</div>
+        </div>
+        <div class="avatar-sm" style="background:#0284c7">LP</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD COLUMN -->
+  <div class="add-column">
+    <span style="font-size:20px">＋</span>
+    <span>Agregar columna</span>
+  </div>
+
+</div>
+
+<!-- ══ BOTTOM PANEL ══ -->
+<div class="bottom-panel">
+  <div class="panel-stat">Tareas totales <strong>23</strong></div>
+  <div class="panel-divider"></div>
+  <div class="panel-stat">En progreso <strong>4</strong></div>
+  <div class="panel-divider"></div>
+  <div class="panel-stat">Bloqueadas <strong style="color:var(--red)">1</strong></div>
+  <div class="panel-divider"></div>
+  <div class="panel-stat">Completadas <strong style="color:var(--green)">8</strong></div>
+  <div class="panel-divider"></div>
+  <div class="panel-stat">Velocidad sprint <strong>34 pts</strong></div>
+  <div class="sprint-badge">Sprint 7 · Finaliza 31 May</div>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>
