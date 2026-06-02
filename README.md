@@ -1,9 +1,12 @@
 English:
+
 What is it for?
+
 FlowDesk is a project management platform designed for development, product, and operations teams.
 It allows you to centralize the planning, tracking, and coordination of work, providing a clear view of the status of each task, the overall project progress, and team performance.
 
 How does it work?
+
 The application uses a Kanban board divided into five stages that represent the lifecycle of a task: Backlog → In Progress → Under Review → QA/Testing → Completed.
 Each card contains relevant information such as a unique identifier, priority level, category tags, assigned owner, comments, and subtask progress via checklists.
 
@@ -18,11 +21,14 @@ They do not represent actual information and are not related to any existing com
 
 
 Español:
+
 ¿Para qué sirve?
+
 FlowDesk es una plataforma de gestión de proyectos diseñada para equipos de desarrollo, producto y operaciones.
 Permite centralizar la planificación, el seguimiento y la coordinación del trabajo, ofreciendo una visión clara del estado de cada tarea, el avance general del proyecto y el rendimiento del equipo.
 
 ¿Cómo funciona?
+
 La aplicación utiliza un tablero Kanban dividido en cinco etapas que representan el ciclo de vida de una tarea: Backlog → En progreso → En revisión → QA / Testing → Completado.
 Cada tarjeta contiene información relevante como un identificador único, nivel de prioridad, etiquetas de categoría, responsable asignado, comentarios y progreso de subtareas mediante listas de verificación.
 En la parte superior se encuentra un sistema de navegación con distintas vistas de trabajo (Tablero, Lista, Gantt, Calendario y Reportes), simulando las herramientas utilizadas en plataformas profesionales de gestión de proyectos. También incluye información del proyecto activo, filtros rápidos y herramientas de búsqueda.
