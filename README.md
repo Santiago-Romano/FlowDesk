@@ -8,10 +8,13 @@ It allows you to centralize the planning, tracking, and coordination of work, pr
 How does it work?
 
 The application uses a Kanban board divided into five stages that represent the lifecycle of a task: Backlog → In Progress → Under Review → QA/Testing → Completed.
+
 Each card contains relevant information such as a unique identifier, priority level, category tags, assigned owner, comments, and subtask progress via checklists.
 
 At the top is a navigation system with different work views (Board, List, Gantt, Calendar, and Reports), mimicking the tools used in professional project management platforms.
+
 It also includes information about the active project, quick filters, and search tools.
+
 Below is a global progress bar that displays the project's completion percentage, along with the delivery deadline and current sprint details.
 
 The lower section presents real-time operational metrics, including the total number of tasks, items in progress, blocked tasks, completed tasks, and sprint velocity, facilitating continuous monitoring of team performance.
@@ -20,7 +23,8 @@ Note:
 All data, names, projects, metrics, users, and statistics displayed in the interface are entirely fictitious and for illustrative purposes only.
 They do not represent actual information and are not related to any existing companies, organizations, or individuals.
 
-
+Below is the link so you can visit the page:
+https://fllowdesk.netlify.app/
 
 Español:
 
@@ -41,3 +45,6 @@ En la zona inferior se presentan métricas operativas en tiempo real, incluyendo
 
 Nota:
 Todos los datos, nombres, proyectos, métricas, usuarios y estadísticas mostrados en la interfaz son completamente ficticios y tienen fines exclusivamente demostrativos. No representan información real ni guardan relación con empresas, organizaciones o personas existentes.
+
+A continuacion dejo el link para que pueda visitar la pagina:
+https://fllowdesk.netlify.app/
