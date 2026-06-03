@@ -76,11 +76,11 @@ Arquitectura de Datos y Simulación de API:
 
 Los datos de las tareas y el estado del tablero en FlowDesk son simulados (mock data) y gestionados en el frontend. Esta implementación tiene varios propósitos clave:
 
-1. Validar la lógica de interacción del usuario y la gestión de estado del frontend en un entorno controlado.
+- Validar la lógica de interacción del usuario y la gestión de estado del frontend en un entorno controlado.
 
-2. Demostrar la capacidad de la interfaz para manejar datos estructurados y complejos (tareas con ID, prioridad, etiquetas, etc.) de manera dinámica.
+- Demostrar la capacidad de la interfaz para manejar datos estructurados y complejos (tareas con ID, prioridad, etiquetas, etc.) de manera dinámica.
 
-3. Preparar la aplicación para una integración fluida con una API RESTful de backend. La arquitectura del código está diseñada para que la persistencia de datos pueda ser fácilmente migrada a un servicio de backend, donde cada acción del usuario (crear, mover, editar, eliminar tareas) se traduciría en una llamada a la API.
+- Preparar la aplicación para una integración fluida con una API RESTful de backend. La arquitectura del código está diseñada para que la persistencia de datos pueda ser fácilmente migrada a un servicio de backend, donde cada acción del usuario (crear, mover, editar, eliminar tareas) se traduciría en una llamada a la API.
 
 
 
