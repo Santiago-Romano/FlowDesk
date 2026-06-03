@@ -28,23 +28,45 @@ https://fllowdesk.netlify.app/
 
 Español:
 
-¿Para qué sirve?
+Descripción General:FlowDesk es una plataforma de gestión de proyectos interactiva, diseñada para equipos de desarrollo, producto y operaciones. Implementa un tablero Kanban visual que facilita la planificación, el seguimiento y la coordinación del trabajo, ofreciendo una visión clara del estado de cada tarea, el avance general del proyecto y el rendimiento del equipo. Este proyecto destaca la capacidad para desarrollar aplicaciones web altamente interactivas con funcionalidades de arrastrar y soltar (drag & drop) y gestión de estado compleja en el frontend.
 
-FlowDesk es una plataforma de gestión de proyectos diseñada para equipos de desarrollo, producto y operaciones.
-Permite centralizar la planificación, el seguimiento y la coordinación del trabajo, ofreciendo una visión clara del estado de cada tarea, el avance general del proyecto y el rendimiento del equipo.
+Características Destacadas:
 
-¿Cómo funciona?
+- Tablero Kanban Interactivo: Gestión visual de tareas a través de columnas personalizables que representan el ciclo de vida de una tarea (Backlog, En Progreso, En Revisión, QA / Testing, Completado).
 
-La aplicación utiliza un tablero Kanban dividido en cinco etapas que representan el ciclo de vida de una tarea: Backlog → En progreso → En revisión → QA / Testing → Completado.
-Cada tarjeta contiene información relevante como un identificador único, nivel de prioridad, etiquetas de categoría, responsable asignado, comentarios y progreso de subtareas mediante listas de verificación.
-En la parte superior se encuentra un sistema de navegación con distintas vistas de trabajo (Tablero, Lista, Gantt, Calendario y Reportes), simulando las herramientas utilizadas en plataformas profesionales de gestión de proyectos. También incluye información del proyecto activo, filtros rápidos y herramientas de búsqueda.
+- Funcionalidad Drag & Drop: Permite a los usuarios mover tarjetas de tareas entre columnas de forma intuitiva, con feedback visual durante el arrastre y actualización automática de los contadores de tareas.
 
-Debajo se muestra una barra de progreso global que permite conocer el porcentaje de avance del proyecto, junto con la fecha límite de entrega y datos del sprint actual.
+- Modal de Detalle de Tarea: Al hacer clic en una tarjeta, se abre un modal que muestra información detallada como ID, prioridad, columna actual, asignado, etiquetas y descripción, con la posibilidad de futuras ediciones.
 
-En la zona inferior se presentan métricas operativas en tiempo real, incluyendo cantidad total de tareas, elementos en progreso, tareas bloqueadas, tareas completadas y velocidad del sprint, facilitando el monitoreo continuo del desempeño del equipo.
+- Gestión de Estado Dinámica: Actualización en tiempo real de los contadores de tareas por columna y las métricas operativas globales (tareas totales, en progreso, bloqueadas, completadas, velocidad del sprint).
 
-Nota:
-Todos los datos, nombres, proyectos, métricas, usuarios y estadísticas mostrados en la interfaz son completamente ficticios y tienen fines exclusivamente demostrativos. No representan información real ni guardan relación con empresas, organizaciones o personas existentes.
+- Creación Dinámica de Tareas: Botón para añadir nuevas tareas al tablero, las cuales son inmediatamente funcionales con drag & drop y el modal de detalle.
+
+- Notificaciones Toast: Sistema de feedback visual para acciones como el movimiento de tareas.
+
+- Diseño Responsivo: Adaptación del tablero y sus componentes para una experiencia óptima en diferentes tamaños de pantalla, desde escritorio hasta dispositivos móviles.
+
+Stack Tecnológico:
+
+Este proyecto fue desarrollado utilizando un stack de frontend puro, demostrando un dominio avanzado de las tecnologías web fundamentales y la implementación de patrones de interacción complejos:
+
+- HTML5: Estructuración semántica del tablero y sus componentes.
+
+- CSS3: Estilización moderna con variables CSS, transiciones, animaciones y un sistema de diseño responsivo que asegura la usabilidad en diversos dispositivos.
+
+- JavaScript (ES6+): Implementación de la lógica central del drag & drop (eventos dragstart, dragover, dragleave, drop), manipulación dinámica del DOM para la creación y actualización de tarjetas, gestión del estado del modal de detalle, y control de las métricas del tablero.
+
+Arquitectura de Datos y Simulación de API:
+
+Los datos de las tareas y el estado del tablero en FlowDesk son simulados (mock data) y gestionados en el frontend. Esta implementación tiene varios propósitos clave:
+
+1. Validar la lógica de interacción del usuario y la gestión de estado del frontend en un entorno controlado.
+
+2. Demostrar la capacidad de la interfaz para manejar datos estructurados y complejos (tareas con ID, prioridad, etiquetas, etc.) de manera dinámica.
+
+3. Preparar la aplicación para una integración fluida con una API RESTful de backend. La arquitectura del código está diseñada para que la persistencia de datos pueda ser fácilmente migrada a un servicio de backend, donde cada acción del usuario (crear, mover, editar, eliminar tareas) se traduciría en una llamada a la API.
+
+
 
 A continuacion dejo el link para que pueda visitar la pagina:
 https://fllowdesk.netlify.app/
