@@ -1,27 +1,43 @@
 English:
 
-What is it for?
+Overview:FlowDesk is an interactive project management platform designed for development, product, and operations teams. It implements a visual Kanban board that facilitates work planning, tracking, and coordination, offering a clear view of each task's status, overall project progress, and team performance. This project highlights the ability to develop highly interactive web applications with drag & drop functionalities and complex frontend state management.
 
-FlowDesk is a project management platform designed for development, product, and operations teams.
-It allows you to centralize the planning, tracking, and coordination of work, providing a clear view of the status of each task, the overall project progress, and team performance.
+Key Features:
 
-How does it work?
+- Interactive Kanban Board: Visual task management through customizable columns representing the task lifecycle (Backlog, In Progress, In Review, QA / Testing, Completed).
 
-The application uses a Kanban board divided into five stages that represent the lifecycle of a task: Backlog → In Progress → Under Review → QA/Testing → Completed.
+- Drag & Drop Functionality: Allows users to intuitively move task cards between columns, with visual feedback during dragging and automatic updates of task counters.
 
-Each card contains relevant information such as a unique identifier, priority level, category tags, assigned owner, comments, and subtask progress via checklists.
+- Task Detail Modal: Clicking on a card opens a modal displaying detailed information such as ID, priority, current column, assigned person, tags, and description, with the possibility of future edits.
 
-At the top is a navigation system with different work views (Board, List, Gantt, Calendar, and Reports), mimicking the tools used in professional project management platforms.
+- Dynamic State Management: Real-time updates of task counters per column and global operational metrics (total tasks, in progress, blocked, completed, sprint velocity).
 
-It also includes information about the active project, quick filters, and search tools.
+- Dynamic Task Creation: Button to add new tasks to the board, which are immediately functional with drag & drop and the detail modal.
 
-Below is a global progress bar that displays the project's completion percentage, along with the delivery deadline and current sprint details.
+- Toast Notifications: Visual feedback system for actions such as moving tasks.
 
-The lower section presents real-time operational metrics, including the total number of tasks, items in progress, blocked tasks, completed tasks, and sprint velocity, facilitating continuous monitoring of team performance.
+- Responsive Design: Adaptation of the board and its components for an optimal experience on different screen sizes, from desktop to mobile devices.
 
-Note: 
-All data, names, projects, metrics, users, and statistics displayed in the interface are entirely fictitious and for illustrative purposes only.
-They do not represent actual information and are not related to any existing companies, organizations, or individuals.
+Technology Stack:
+
+This project was developed using a pure frontend stack, demonstrating advanced mastery of fundamental web technologies and the implementation of complex interaction patterns:
+
+- HTML5: Semantic structuring of the board and its components.
+
+- CSS3: Modern styling with CSS variables, transitions, animations, and a responsive design system that ensures usability across various devices.
+
+- JavaScript (ES6+): Implementation of the core drag & drop logic (dragstart, dragover, dragleave, drop events), dynamic DOM manipulation for card creation and updates, management of the detail modal's state, and control of board metrics.
+
+Data Architecture and API Simulation:
+
+Task data and board state in FlowDesk are simulated (mock data) and managed in the frontend. This implementation serves several key purposes:
+
+- Validating user interaction logic and frontend state management in a controlled environment.
+
+- Demonstrating the interface's ability to handle structured and complex data (tasks with ID, priority, tags, etc.) dynamically.
+
+- Preparing the application for seamless integration with a RESTful backend API. The code architecture is designed so that data persistence can be easily migrated to a backend service, where each user action (create, move, edit, delete tasks) would translate into an API call.
+
 
 Below is the link so you can visit the page:
 https://fllowdesk.netlify.app/
